@@ -1,0 +1,108 @@
+body {
+    background-image:url("./../images/train-station-wallpapers-28950-7091139.jpg");
+  background-repeat: no-repeat;
+  background-size: 1552px 786px;
+    line-height: 30px;
+    /* background-size: cover;
+    /* background-position: center; */
+    color: green;
+    background-color: black;
+    width: 100%;
+    padding: 0px;
+    margin: auto 0;
+    overflow: auto;
+}
+
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+h1{
+    text-shadow: 2px 2px 2px yellowgreen;
+}
+
+h1, h3, .panel-title, .panel-body {
+    color: darkgreen;
+}
+
+th, h2 {
+    color: green !important;
+}
+
+tr:hover {
+    background: #000 !important;
+}
+
+tr:hover td {
+    background: rgba(105, 105, 105, .2) !important;
+    color: yellowgreen !important;
+}
+
+td {
+    font-size: 13px !important;
+    font-weight: 80 !important;
+}
+
+label {
+    font-size: 14px;
+}
+
+button {
+    border-color: palegreen !important;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px !important;
+    padding: 0px !important;
+}
+
+.jumbotron {
+    width: 100%;
+    /* background: rgb(105, 105, 105); */
+    background: rgba(17, 17, 17, 0.849);    
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;  
+    /* border: 1px solid paleturquoise !important; */
+    top:15px;
+}
+
+.panel-primary, input {
+    background-color: rgba(0,0,0,.5);
+    border-color: rgb(99, 114, 114) !important;
+    width: 100%;
+}
+
+.panel-primary{
+    min-height: 500px;
+    background: rgba(17, 17, 17, 0.849);  
+        
+}
+
+.panel-primary >.panel-section {
+    color: aliceblue !important;
+    font-size: 20px;
+    border-color: paleturquoise !important;
+    background: rgba(105, 105, 105, 0.705);
+    /* background: rgba(17, 17, 17, 0.959);    */
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000; 
+}
+
+.panel-title, th, h2 {
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+.panel-body, .panel-heading {
+    padding: 7px !important;
+}
+
+.milTime {
+    font-size: 11px !important;
+    line-height: 0px !important;
+}
+
+#freqDisplay, #nextDisplay {
+    text-align: center !important;
+}

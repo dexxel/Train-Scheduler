@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeXXeL Train Company!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+    <link src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>CHu CHu Stalin!</h1>
+      <hr>
+      <h2>Current Time: <span id="currentTime"></span></h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+              <h3 class="panel-title"><strong><i class="fa  fa-"></i>Current DeXXeL Train Schedule</strong></h3>
+          </div>
+          <div class="panel-body">
+            <table class="table table-hover table-responsive" id="trainTable" style="background-color: none !important; color: none">
+              <thead>
+
+                <tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>Frequency (min)</th>
+                  <th>Next Arrival</th>
+                  <th>Mintues Away</th>
+                </tr>
+
+              </thead>
+              <tbody id="trainTable">
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-primary">
+              <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="name"><strong>Train Name</strong></label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Name of Ride">
+              </div>
+
+              <div class="form-group">
+                  <label for="dest"><strong>Destination</strong></label>
+                  <input type="text" class="form-control" id="destInput" placeholder="City">
+                </div>
+
+              <div class="form-group">
+                  <label class="nextTrain" for="nextTrain"><strong>First Traine Name</strong></label><label class="milTime">&nbsp;(HH:mm - Military)</label>
+                  <input type="" class="form-control" id="timeInput" placeholder="00:00">
+                </div>
+              
+              <div class="form-group">
+                  <label for="minsAway"><strong>Frequency - (mins)</strong></label>
+                  <input type="text" class="form-control" id="freqInput" placeholder="Minutes">
+              </div>
+              <hr><hr><hr>
+              <button type="submit" class="btn btn-default" id="submit">Add Train</button>
+
+            </form>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+<script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
