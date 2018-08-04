@@ -101,7 +101,7 @@ button {
 .table-responsive {
     width: 100%;
     overflow-x: auto;
-    /* display: block; */
+    display: inline-table;
 }
 
 .milTime {
